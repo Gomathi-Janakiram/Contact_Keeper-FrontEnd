@@ -13,7 +13,7 @@ const Home = () => {
     const postData = (data) => {
         console.log(data)
         if (!data.isEdit) {
-            fetch("http://localhost:4000/add", {
+            fetch("https://secret-sands-53281.herokuapp.com/add", {
                 method: "post",
                 headers: {
                     "content-type": "application/json",
@@ -32,7 +32,7 @@ const Home = () => {
                 getData()
             })
         } else {
-            fetch("http://localhost:4000/edit", {
+            fetch("https://secret-sands-53281.herokuapp.com/edit", {
                 method: "put",
                 headers: {
                     "content-type": "application/json",
@@ -56,7 +56,7 @@ const Home = () => {
     }
 
     const getData = () => {
-        fetch("http://localhost:4000/contacts", {
+        fetch("https://secret-sands-53281.herokuapp.com/contacts", {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")
             }
@@ -74,7 +74,7 @@ const Home = () => {
     }, [])
 
     const deleteData = (data) => {
-        fetch("http://localhost:4000/" + data._id, {
+        fetch("https://secret-sands-53281.herokuapp.com/" + data._id, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

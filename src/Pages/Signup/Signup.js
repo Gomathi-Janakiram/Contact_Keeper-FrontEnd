@@ -12,7 +12,7 @@ const Signup = () => {
     })
 
     const handleSignup = () => {
-        fetch("http://localhost:4000/signup", {
+        fetch("https://secret-sands-53281.herokuapp.com/signup", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"

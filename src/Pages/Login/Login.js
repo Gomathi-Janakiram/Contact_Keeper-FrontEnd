@@ -15,7 +15,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch("http://localhost:4000/login", {
+        fetch("https://secret-sands-53281.herokuapp.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
