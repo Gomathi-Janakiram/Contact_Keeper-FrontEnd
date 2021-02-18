@@ -1,0 +1,31 @@
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toast{
+    color:white;
+    display: inline;
+    position: fixed;
+    top:100px !important;
+    right:50px !important;
+    left:auto !important;
+    padding: 20px;
+}
+
+.danger{
+    background-color:#c62828;
+}
+
+.success{
+    background-color: #00e676;
+}
+
+@media(max-width:800px){
+    .contact-container{
+        flex-direction: column;
+    }
+}
+
+
+

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+.contacts{
+    flex-basis: 40%;
+    font-family: 'Quicksand';
+    margin-right: 100px;
+    height:100px;
+}
+
+ .contacts-container{
+     display: flex;
+     flex-direction: column;
+     margin-left: 20px;
+     margin-right: 20px;
+     border:1px solid rgb(214, 198, 198);
+     background-color: rgb(233, 240, 234);
+     margin-top: 20px;
+     padding: 10px;
+ }
+ 
+ .name-contact-type{
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .name-contact-type h3:nth-child(2){
+     background-color:rgb(53, 45, 128) ;
+    padding: 5px;
+    border-radius: 10px;
+    color:white;
+ }
+ .email-phone{
+     margin-top: -20px;
+ }
+
+ .edit-delete{
+     display: flex;
+     width: 20%;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 5px;
+ }
+ .edit-delete button:nth-child(1){
+     background-color: rgb(80, 77, 77);
+     border-radius: 2px;
+     padding:5px;
+     color:white;
+     width: 40%;
+     text-align: center;
+     border:none;
+ }
+ .edit-delete button:nth-child(2){
+     background-color: #c62828;
+     border-radius: 2px;
+     padding: 5px;
+     color:white;
+     border:none;
+ }
+
+ .edit-delete h3:hover{
+     cursor: pointer;
+ }
+
+ @media(max-width:950px){
+    .contacts{
+        flex-basis: 60%;
+    }
+    .edit-delete{
+        width: 30%;
+    }
+}
+
+@media(max-width:800px){
+    .contacts{
+        margin-left: 17%;
+        width: 70%;
+    }
+}
+
+@media(max-width:560px){
+    .name-contact-type h3:nth-child(2){
+       font-size: 12px;
+       padding: 2px;
+       height:20px;
+    }
+    .email-phone{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:300px){
+    .email-phone{
+        font-size: 10px;
+    }
+}
+

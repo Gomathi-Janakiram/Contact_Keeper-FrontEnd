@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+    margin-left:40px;
+    font-family: 'Quicksand';
+}
+
+.contact-form .input{
+    width: 70%;
+    height:40px;
+    border:1px solid rgb(214, 198, 198);
+}
+
+.radio-container{
+    display: flex;
+    width:100%;
+    margin-left:30%;
+}
+
+.contact-type-header{
+    margin-top: -5px;
+    width:100%;
+    margin-left: 30%;
+}
+
+.add-contact-btn{
+    width:70%;
+   margin-top: 5%;
+   height: 13%;
+   background-color:rgb(53, 45, 128);
+   color:white;
+   outline: none;
+   border: none;
+   font-size: 20px;
+}
+.add-contact-btn:hover{
+    opacity: 0.8;
+}
+
+@media(max-width:800px){
+    .add-contact-btn{
+        width: 71%;
+        height: 20%;
+    }
+    .contact-form{
+        flex-basis: 100%;
+    }
+}
+
